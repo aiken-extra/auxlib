@@ -5,9 +5,11 @@ An Aiken auxiliary library. Currently it contains removed functions from `stdlib
 | ℹ️  | Package info    | aiken-extra/auxlib v2.160.202309                                                                    | 🪲  |
 | --- | --------------- | --------------------------------------------------------------------------------------------------- | --- |
 | 🟢  | **Depends on**  | **aiken-lang/stdlib v1.6.0**                                                                        | ✔️  |
-| 🟢  | **Tested with** | **[9782c094b7](https://github.com/aiken-lang/aiken/tree/9782c094b7d917c750dddb180197e8bb24514645)** | ✔️  |
+| 🟢  | **Tested with** | **[f379039efc](https://github.com/aiken-lang/aiken/tree/f379039efcdacff91121eb1e953b7d0c5782519e)** | ✔️  |
 
 ## History
+
+- TODO: Added `collections.{zip3, unzip3}`
 
 - [v2.160.202309](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202309): Compiled using [9782c094b7](https://github.com/aiken-lang/aiken/tree/9782c094b7d917c750dddb180197e8bb24514645)
 
