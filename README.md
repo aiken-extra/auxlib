@@ -2,20 +2,20 @@
 
 An Aiken auxiliary library. Currently it contains removed functions from `stdlib`, and some minor additional stuffs.
 
-| ℹ️  | Package info    | aiken-extra/auxlib v2.160.202309                                                                    | 🪲  |
+| ℹ️  | Package info    | aiken-extra/auxlib v2.160.202310                                                                    | 🪲  |
 | --- | --------------- | --------------------------------------------------------------------------------------------------- | --- |
 | 🟢  | **Depends on**  | **aiken-lang/stdlib v1.6.0**                                                                        | ✔️  |
-| 🟢  | **Tested with** | **[f379039efc](https://github.com/aiken-lang/aiken/tree/f379039efcdacff91121eb1e953b7d0c5782519e)** | ✔️  |
+| 🟢  | **Tested with** | **[10b9dc2042](https://github.com/aiken-lang/aiken/tree/10b9dc204257328b758692d9c714b576d3b0a1dc)** | ✔️  |
 
 ## History
 
-- TODO: Added `collections.{zip3, unzip3}`
+- [v2.160.202310](https://github.com/aiken-extra/auxlib/releases/tag/2.160.202310): Added `collections.{zip3, unzip3}`
 
 - [v2.160.202309](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202309): Compiled using [9782c094b7](https://github.com/aiken-lang/aiken/tree/9782c094b7d917c750dddb180197e8bb24514645)
 
 - [v2.150.202308f](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202308f): Compiled using [1715496d5b](https://github.com/aiken-lang/aiken/tree/1715496d5ba70be939662b554b5aac9fff4d7f3e)
 
-- [v2.150.202308](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202308): In [stdlib v1.5.0](https://github.com/aiken-lang/stdlib/releases/tag/1.5.0) the `list.{and,or}` were removed in favor of the new {`and`,`or`} blocks (see [aiken v1.0.14-alpha](https://github.com/aiken-lang/aiken/releases/tag/v1.0.14-alpha) release notes). Unfortunately currently there is no replacement to conveniently do the logical `and`|`or` to `List<Bool>` data-type variables, for example:
+- [v2.150.202308](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202308): In [stdlib v1.5.0](https://github.com/aiken-lang/stdlib/releases/tag/1.5.0) the `list.{and,or}` were removed in favor of the new {`and`,`or`} blocks (see [aiken v1.0.14-alpha](https://github.com/aiken-lang/aiken/releases/tag/v1.0.14-alpha) release notes). Unfortunately currently there is no replacement to conveniently do the logical `and`|`or` for `List<Bool>` data-type variables, for example:
 
 Previously we could just,
 

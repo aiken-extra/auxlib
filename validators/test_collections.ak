@@ -1,8 +1,8 @@
 //// ```
 //// ┍━ test_collections ━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:  30677, cpu: 10735506] list_and
-//// │ PASS [mem:  29717, cpu: 10050212] list_or
-//// │ PASS [mem:  99247, cpu: 39033735] zip3
+//// │ PASS [mem:  30377, cpu: 10666506] list_and
+//// │ PASS [mem:  29117, cpu:  9912212] list_or
+//// │ PASS [mem:  95047, cpu: 38067735] zip3
 //// │ PASS [mem: 145231, cpu: 54009708] unzip3
 //// ┕━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
 //// ```
