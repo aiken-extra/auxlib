@@ -1,10 +1,10 @@
 //// ```
-//// ┍━ test_logics ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem: 30677, cpu: 10735506] all_true
-//// │ PASS [mem: 29717, cpu: 10050212] any_true
-//// │ PASS [mem: 33682, cpu: 11828286] all_false
-//// │ PASS [mem: 32121, cpu: 10924436] any_false
-//// ┕━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
+//// ┍━ test_logics ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+//// │ PASS [mem:  30377, cpu: 10666506] all_true
+//// │ PASS [mem:  29117, cpu:  9912212] any_true
+//// │ PASS [mem:  33382, cpu: 11759286] all_false
+//// │ PASS [mem:  31521, cpu: 10786436] any_false
+//// ┕━━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
 //// ```
 
 use auxlib/logics
