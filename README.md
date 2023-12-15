@@ -2,12 +2,14 @@
 
 An Aiken auxiliary library. Currently it contains removed functions from `stdlib`, and some minor additional stuffs.
 
-| ℹ️  | Package info    | aiken-extra/auxlib v2.170.202311                                                                    | 🪲  |
+| ℹ️  | Package info    | aiken-extra/auxlib v2.170.202312                                                                    | 🪲  |
 | --- | --------------- | --------------------------------------------------------------------------------------------------- | --- |
 | 🟢  | **Depends on**  | **aiken-lang/stdlib v1.7.0**                                                                        | ✔️  |
-| 🟢  | **Tested with** | **[7d319077e6](https://github.com/aiken-lang/aiken/tree/7d319077e679962c4f0512dfb78fa41ffcd5fbc4)** | ✔️  |
+| 🟢  | **Tested with** | **[07122aaa88](https://github.com/aiken-lang/aiken/tree/07122aaa88925c1a9d9db0bc30517e4b2b3c55af)** | ✔️  |
 
 ## History
+
+- [v2.170.202312](https://github.com/aiken-extra/auxlib/releases/tag/2.150.202308f): Compiled using [07122aaa88](https://github.com/aiken-lang/aiken/tree/07122aaa88925c1a9d9db0bc30517e4b2b3c55af)
 
 - [v2.170.202311](https://github.com/aiken-extra/auxlib/releases/tag/2.170.202311): Use `stdlib v1.7.0`
 
