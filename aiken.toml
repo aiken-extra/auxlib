@@ -1,5 +1,5 @@
 name = "aiken-extra/auxlib"
-version = "2.170.202311"
+version = "2.170.202312"
 license = "Apache-2.0"
 description = "An Aiken auxiliary library"
 
