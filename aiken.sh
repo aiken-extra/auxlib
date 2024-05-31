@@ -4,20 +4,23 @@ MAGENTA='\033[1;35m'
 WHITE='\033[1;37m'
 RESET='\033[0m'
 
+# aiken format
+aiken fmt
+
 # aiken check
 echo -e "${MAGENTA}Running${RESET} ${WHITE}aiken check${RESET}:"
-cargo-aiken c 2>&1 | tee ${PROJECT}.tests
+aiken c 2>&1 | tee ${PROJECT}.tests
 echo "" # new line
 
 # aiken build
 echo -e "${MAGENTA}Running${RESET} ${WHITE}aiken build${RESET}:"
-cargo-aiken b $1
+aiken b $1
 echo "" # new line
 
 # aiken blueprint & address
 echo -e "${MAGENTA}Running${RESET} ${WHITE}aiken blueprint${RESET} & ${WHITE}aiken address${RESET}:"
-cargo-aiken blueprint convert > ${PROJECT}.plutus
-cargo-aiken address > ${PROJECT}.address
+aiken blueprint convert > ${PROJECT}.plutus
+aiken address > ${PROJECT}.address
 echo "" # new line
 
 # aiken docs
