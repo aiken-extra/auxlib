@@ -1,9 +1,9 @@
 //// ```
 //// ┍━ test_logics ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:  28877, cpu: 10323876] all_true
-//// │ PASS [mem:  27917, cpu:  9638108] any_true
-//// │ PASS [mem:  31882, cpu: 11416656] all_false
-//// │ PASS [mem:  30321, cpu: 10512332] any_false
+//// │ PASS [mem:  28877, cpu:  7921595] all_true
+//// │ PASS [mem:  27917, cpu:  7353021] any_true
+//// │ PASS [mem:  31882, cpu:  8781840] all_false
+//// │ PASS [mem:  30321, cpu:  8041217] any_false
 //// ┕━━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
 //// ```
 
