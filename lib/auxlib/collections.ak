@@ -1,5 +1,7 @@
-use aiken/list.{foldr, map3, push}
+use aiken/collection/list.{foldr, map3, push}
 use auxlib/logics.{all_true, any_true}
+
+// ## List
 
 /// Tells whether all of the `booleans` are `true`
 pub fn list_and(bool_list: List<Bool>) -> Bool {
@@ -10,6 +12,8 @@ pub fn list_and(bool_list: List<Bool>) -> Bool {
 pub fn list_or(bool_list: List<Bool>) -> Bool {
   bool_list |> any_true
 }
+
+// ## Zip
 
 /// Combine 3 lists together into a list of 3-tuple
 pub fn zip3(az: List<a>, bz: List<b>, cz: List<c>) -> List<(a, b, c)> {

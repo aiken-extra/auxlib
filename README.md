@@ -1,17 +1,19 @@
 # auxlib
 
-An Aiken auxiliary library. Currently it contains removed functions from `stdlib`, and some minor additional stuffs.
+An Aiken auxiliary library. Currently it contains some removed functions from `stdlib`, and additional stuffs.
 
-| ℹ️  | Package info    | aiken-extra/auxlib v2.190.202405 | 🪲  |
+| ℹ️  | Package info    | aiken-extra/auxlib v2.200.202409 | 🐞  |
 | --- | --------------- | -------------------------------- | --- |
-| 🟢  | **Depends on**  | **aiken-lang/stdlib v1.9.0**     | ✔️  |
-| 🟢  | **Tested with** | **aiken v1.0.28-alpha**          | ✔️  |
+| 🟢  | **Depends on**  | **aiken-lang/stdlib v2.0.0**     | ✔️  |
+| 🟢  | **Tested with** | **aiken v1.1.0**                 | ✔️  |
 
 ## History
 
-- [v2.190.202405](https://github.com/aiken-extra/auxlib/releases/tag/2.190.202405): Compiled using `aiken v1.0.28-alpha`
+- [v2.200.202409](https://github.com/aiken-extra/auxlib/releases/tag/2.190.202405): Use `stdlib v2.0.0`
 
-- [v2.180.202403](https://github.com/aiken-extra/auxlib/releases/tag/2.180.202403): Compiled using [21b1e29f09](https://github.com/aiken-lang/aiken/tree/21b1e29f0951db3574ffe714c06f3fcc5cd28d51)
+- [v2.190.202405](https://github.com/aiken-extra/auxlib/releases/tag/2.190.202405): Use `stdlib v1.9.0`
+
+- [v2.180.202403](https://github.com/aiken-extra/auxlib/releases/tag/2.180.202403): Use `stdlib v1.8.0`
 
 - [v2.170.202312](https://github.com/aiken-extra/auxlib/releases/tag/2.170.202312): Compiled using [07122aaa88](https://github.com/aiken-lang/aiken/tree/07122aaa88925c1a9d9db0bc30517e4b2b3c55af)
 
@@ -81,5 +83,3 @@ use auxlib/logics.{all_true}
   let list_variable = [True, True, True]
   list_variable |> all_true
 ```
-
-at least until they provide the replacements for `list.{and,or}`.

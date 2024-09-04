@@ -26,7 +26,7 @@ echo "" # new line
 # aiken docs
 if [ $# -eq 0 ]; then
     echo -e "${MAGENTA}Running${RESET} ${WHITE}aiken docs${RESET}:"
-    cargo-aiken docs
+    aiken docs
 fi
 
 # .gitignore

@@ -1,9 +1,9 @@
 //// ```
 //// ┍━ test_collections ━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:  28877, cpu: 10323876] list_and
-//// │ PASS [mem:  27917, cpu:  9638108] list_or
-//// │ PASS [mem:  95047, cpu: 38071053] zip3
-//// │ PASS [mem: 112579, cpu: 46079781] unzip3
+//// │ PASS [mem:  28877, cpu:  7921595] list_and
+//// │ PASS [mem:  27917, cpu:  7353021] list_or
+//// │ PASS [mem:  95047, cpu: 33200860] zip3
+//// │ PASS [mem: 112579, cpu: 43284882] unzip3
 //// ┕━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
 //// ```
 
@@ -30,25 +30,15 @@ test list_or() {
 
 test zip3() {
   and {
-    collections.zip3([1,
-        2], ["a",
-        "b",
-        "c"], [True, False, True, False]) == [(1, "a", True), (2, "b", False)],
-    collections.zip3([1,
-        2,
-        3], ["a",
-        "b",
-        "c",
-        "d"], [True, False, True]) == [
-      (1, "a", True),
-      (2, "b", False),
-      (3, "c", True),
+    collections.zip3([1, 2], ["a", "b", "c"], [True, False, True, False]) == [
+      (1, "a", True), (2, "b", False),
     ],
-    collections.zip3([1,
-        2,
-        3,
-        4], ["a",
-        "b", "c"], [True, False]) == [(1, "a", True), (2, "b", False)],
+    collections.zip3([1, 2, 3], ["a", "b", "c", "d"], [True, False, True]) == [
+      (1, "a", True), (2, "b", False), (3, "c", True),
+    ],
+    collections.zip3([1, 2, 3, 4], ["a", "b", "c"], [True, False]) == [
+      (1, "a", True), (2, "b", False),
+    ],
   }
 }
 

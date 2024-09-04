@@ -1,4 +1,4 @@
-use aiken/list.{all, any}
+use aiken/collection/list.{all, any}
 
 /// Equivalent to the old `list.and`
 pub fn all_true(bool_list: List<Bool>) -> Bool {
