@@ -1,5 +1,5 @@
 name = "aiken-extra/auxlib"
-version = "2.200.202409"
+version = "2.210.202409"
 license = "Apache-2.0"
 description = "An Aiken auxiliary library"
 
@@ -10,5 +10,5 @@ platform = "github"
 
 [[dependencies]]
 name = "aiken-lang/stdlib"
-version = "v2"
+version = "v2.1.0"
 source = "github"
