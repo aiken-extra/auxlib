@@ -12,10 +12,12 @@ pub fn any_true(bool_list: List<Bool>) -> Bool {
 
 /// The opposite of `all_true`
 pub fn all_false(bool_list: List<Bool>) -> Bool {
-  bool_list |> all(fn(bool) { !bool })
+  let bool <- all(bool_list)
+  !bool
 }
 
 /// The opposite of `any_true`
 pub fn any_false(bool_list: List<Bool>) -> Bool {
-  bool_list |> any(fn(bool) { !bool })
+  let bool <- any(bool_list)
+  !bool
 }

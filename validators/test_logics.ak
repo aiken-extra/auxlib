@@ -1,15 +1,5 @@
-//// ```
-//// ┍━ test_logics ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:  28877, cpu:  7921595] all_true
-//// │ PASS [mem:  27917, cpu:  7353021] any_true
-//// │ PASS [mem:  31882, cpu:  8781840] all_false
-//// │ PASS [mem:  30321, cpu:  8041217] any_false
-//// ┕━━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
-//// ```
-
 use auxlib/logics
 
-/// https://github.com/aiken-lang/stdlib/blob/888c567afbbbcb4a8550e1e7c146bdbd0b8e9c5f/lib/aiken/list.ak#L49
 test all_true() {
   and {
     [True, True, True] |> logics.all_true,
@@ -18,7 +8,6 @@ test all_true() {
   }
 }
 
-/// https://github.com/aiken-lang/stdlib/blob/888c567afbbbcb4a8550e1e7c146bdbd0b8e9c5f/lib/aiken/list.ak#L183
 test any_true() {
   and {
     [True, True] |> logics.any_true,

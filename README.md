@@ -1,13 +1,18 @@
 # auxlib
 
+> [!IMPORTANT]
+> Deprecated in favor of [`aiken-extra/test_kit`](https://github.com/aiken-extra/test_kit)
+
 An Aiken auxiliary library. Currently it contains some removed functions from `stdlib`, and additional stuffs.
 
-| ℹ️  | Package info    | aiken-extra/auxlib v2.210.202409 | 🐞  |
-| --- | --------------- | -------------------------------- | --- |
-| 🟢  | **Depends on**  | **aiken-lang/stdlib v2.1.0**     | ✔️  |
-| 🟢  | **Tested with** | **aiken v1.1.2**                 | ✔️  |
+| ℹ️  | Package info    | aiken-extra/auxlib v2.220.202501                                                         | 🐞  |
+| --- | --------------- | ---------------------------------------------------------------------------------------- | --- |
+| 🟢  | **Depends on**  | [**aiken-lang/stdlib v2.2.0**](https://github.com/aiken-lang/stdlib/releases/tag/v2.2.0) | ✅  |
+| 🟢  | **Tested with** | [**aiken v1.1.9**](https://github.com/aiken-lang/aiken/releases/tag/v1.1.9)              | ✅  |
 
 ## History
+
+- [v2.220.202501](https://github.com/aiken-extra/auxlib/releases/tag/2.220.202412): Use `stdlib v2.2.0`
 
 - [v2.210.202409](https://github.com/aiken-extra/auxlib/releases/tag/2.210.202409): Use `stdlib v2.1.0`
 

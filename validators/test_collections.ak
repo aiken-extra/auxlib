@@ -1,15 +1,5 @@
-//// ```
-//// ┍━ test_collections ━━━━━━━━━━━━━━━━━━━━━━━━
-//// │ PASS [mem:  28877, cpu:  7921595] list_and
-//// │ PASS [mem:  27917, cpu:  7353021] list_or
-//// │ PASS [mem:  95047, cpu: 33200860] zip3
-//// │ PASS [mem: 112579, cpu: 43284882] unzip3
-//// ┕━━━━━━━━━━━━━ 4 tests | 4 passed | 0 failed
-//// ```
-
 use auxlib/collections
 
-/// https://github.com/aiken-lang/stdlib/blob/888c567afbbbcb4a8550e1e7c146bdbd0b8e9c5f/lib/aiken/list.ak#L49
 test list_and() {
   and {
     [True, True, True] |> collections.list_and,
@@ -18,7 +8,6 @@ test list_and() {
   }
 }
 
-/// https://github.com/aiken-lang/stdlib/blob/888c567afbbbcb4a8550e1e7c146bdbd0b8e9c5f/lib/aiken/list.ak#L183
 test list_or() {
   and {
     [True, True] |> collections.list_or,
