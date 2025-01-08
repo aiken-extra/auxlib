@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#eff1f5" media="(prefers-color-scheme: light)"/>
     <meta name="theme-color" content="#1e1e2e" media="(prefers-color-scheme: dark)"/>
     <link rel="icon" type="image/svg+xml" sizes="any" href="./favicon.svg"/>
-    <link rel="stylesheet" href="./css/index.css?v=1.1.2" type="text/css"/>
-    <link id="syntax-theme" rel="stylesheet" href="./css/atom-one-light.min.css?v=1.1.2"/>
+    <link rel="stylesheet" href="./css/index.css?v=1.1.9" type="text/css"/>
+    <link id="syntax-theme" rel="stylesheet" href="./css/atom-one-light.min.css?v=1.1.9"/>
   </head>
   <body class="prewrap-off theme-light drawer-closed">
     <script>
@@ -120,13 +120,13 @@
       <h2>
         <a href="./">auxlib</a>
         <span id="project-version">
-          <span>2.210.202409 </span>
+          <span>2.220.202412 </span>
         </span>
         <script>
           "use strict";
 
           if ("undefined" !== typeof versionNodes) {
-            const currentVersion = "v2.210.202409";
+            const currentVersion = "v2.220.202412";
             if (! versionNodes.find(element => element.version === currentVersion)) {
               versionNodes.unshift({ version: currentVersion, url: "#" });
             }
@@ -217,13 +217,19 @@
       <main class="content">
         
 <h1>auxlib</h1>
+<blockquote class="markdown-alert-important">
+<p>Deprecated in favor of <a href="https://github.com/aiken-extra/test_kit"><code>aiken-extra/test_kit</code></a></p>
+</blockquote>
 <p>An Aiken auxiliary library. Currently it contains some removed functions from <code>stdlib</code>, and additional stuffs.</p>
-<table><thead><tr><th>ℹ️</th><th>Package info</th><th>aiken-extra/auxlib v2.210.202409</th><th>🐞</th></tr></thead><tbody>
-<tr><td>🟢</td><td><strong>Depends on</strong></td><td><strong>aiken-lang/stdlib v2.1.0</strong></td><td>✔️</td></tr>
-<tr><td>🟢</td><td><strong>Tested with</strong></td><td><strong>aiken v1.1.2</strong></td><td>✔️</td></tr>
+<table><thead><tr><th>ℹ️</th><th>Package info</th><th>aiken-extra/auxlib v2.220.202501</th><th>🐞</th></tr></thead><tbody>
+<tr><td>🟢</td><td><strong>Depends on</strong></td><td><a href="https://github.com/aiken-lang/stdlib/releases/tag/v2.2.0"><strong>aiken-lang/stdlib v2.2.0</strong></a></td><td>✅</td></tr>
+<tr><td>🟢</td><td><strong>Tested with</strong></td><td><a href="https://github.com/aiken-lang/aiken/releases/tag/v1.1.9"><strong>aiken v1.1.9</strong></a></td><td>✅</td></tr>
 </tbody></table>
 <h2>History</h2>
 <ul>
+<li>
+<p><a href="https://github.com/aiken-extra/auxlib/releases/tag/2.220.202412">v2.220.202501</a>: Use <code>stdlib v2.2.0</code></p>
+</li>
 <li>
 <p><a href="https://github.com/aiken-extra/auxlib/releases/tag/2.210.202409">v2.210.202409</a>: Use <code>stdlib v2.1.0</code></p>
 </li>
@@ -256,15 +262,15 @@
 </li>
 </ul>
 <p>Previously we could just,</p>
-<pre><code class="language-gleam">  let list_variable = [True, True, True]
+<pre><code class="language-aiken">  let list_variable = [True, True, True]
   list.and(list_variable)
 </code></pre>
 <p>now if we try,</p>
-<pre><code class="language-gleam">  let list_variable = [True, True, True]
+<pre><code class="language-aiken">  let list_variable = [True, True, True]
   and { list_variable }
 </code></pre>
 <p>it will throw <code>aiken::check::type_mismatch</code>:</p>
-<pre><code class="language-gleam">  × While trying to make sense of your code...
+<pre><code class="language-aiken">  × While trying to make sense of your code...
   ╰─▶ I struggled to unify the types of two expressions.
 
   help: I am inferring the following type:
@@ -282,15 +288,15 @@ Summary
     1 error, 0 warnings
 </code></pre>
 <p>It is possible to use <code>list_variable |&gt; all(identity)</code> from <code>Prelude</code>, but it’s not as clear as <code>list.and</code>. Hence for the time being, this library offers the following solution:</p>
-<pre><code class="language-gleam">use auxlib/collections.{list_and}
+<pre><code class="language-aiken">use auxlib/collections.{list_and}
 </code></pre>
-<pre><code class="language-gleam">  let list_variable = [True, True, True]
+<pre><code class="language-aiken">  let list_variable = [True, True, True]
   list_and(list_variable)
 </code></pre>
 <p>or alternatively,</p>
-<pre><code class="language-gleam">use auxlib/logics.{all_true}
+<pre><code class="language-aiken">use auxlib/logics.{all_true}
 </code></pre>
-<pre><code class="language-gleam">  let list_variable = [True, True, True]
+<pre><code class="language-aiken">  let list_variable = [True, True, True]
   list_variable |&gt; all_true
 </code></pre>
 
@@ -370,8 +376,8 @@ Summary
       </defs>
     </svg>
 
-    <script src="./js/highlight.min.js?v=1.1.2"></script>
-    <script src="./js/highlightjs-aiken.js?v=1.1.2"></script>
+    <script src="./js/highlight.min.js?v=1.1.9"></script>
+    <script src="./js/highlightjs-aiken.js?v=1.1.9"></script>
     <script>
       document.querySelectorAll("pre code").forEach((elem) => {
         if (elem.className === "") {
@@ -413,10 +419,10 @@ Summary
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="./js/lunr.min.js?v=1.1.2"></script>
-    <script src="./js/index.js?v=1726367701"></script>
+    <script src="./js/lunr.min.js?v=1.1.9"></script>
+    <script src="./js/index.js?v=1736322421"></script>
     <!-- Load the search index using JSONP to avoid CORS issues -->
-    <script src="./search-data.js?v=1726367701"></script>
+    <script src="./search-data.js?v=1736322421"></script>
     <script>
       void function() {
         if (typeof tippy !== "undefined") {

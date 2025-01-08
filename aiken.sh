@@ -25,8 +25,35 @@ echo "" # new line
 
 # aiken docs
 if [ $# -eq 0 ]; then
+    # README.md
+    GLEAM_CODE=("\`\`\`gleam")
+    AIKEN_CODE=("\`\`\`aiken")
+
+    # README.md - aiken docs: preprocessing - replace ```gleam with ```aiken
+    README=()
+    while IFS= read -r LINE; do
+        if [ "$LINE" == "$GLEAM_CODE" ]; then
+            README+=("$AIKEN_CODE")
+        else
+            README+=("$LINE")
+        fi
+    done < README.md
+    printf "%s\n" "${README[@]}" > README.md
+
+    # Running `aiken docs`
     echo -e "${MAGENTA}Running${RESET} ${WHITE}aiken docs${RESET}:"
     aiken docs
+    
+    # README.md - aiken docs: postprocessing - replace ```aiken with ```gleam
+    README=()
+    while IFS= read -r LINE; do
+        if [ "$LINE" == "$AIKEN_CODE" ]; then
+            README+=("$GLEAM_CODE")
+        else
+            README+=("$LINE")
+        fi
+    done < README.md
+    printf "%s\n" "${README[@]}" > README.md
 fi
 
 # .gitignore
@@ -34,7 +61,7 @@ GITIGNORE=()
 GITIGNORE+=("*.tests")
 GITIGNORE+=("*.plutus")
 GITIGNORE+=("*.address")
-while read LINE; do
+while IFS= read -r LINE; do
     if [ "$LINE" == "docs/" ]; then
         GITIGNORE+=("# docs/")
     elif [ "$LINE" != "*.tests" ] &&
